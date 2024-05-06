@@ -96,50 +96,31 @@ VALUES
 ('SP23', N'Albuterol', 'NCC5', 'TH', 300000, 9000),
 ('SP24', N'Insulin', 'NCC5', 'TH', 400000, 2000),
 ('SP25', N'Ultrasound machine (Máy siêu âm)', 'NCC5', 'TBYT', 10000000, 250),
-('SP26', N'Infrared thermometer (Nhiệt kế hồng ngoại)', 'NCC1', 'TBYT', 55000, 1200),
-('SP27', N'Mentholatum', 'NCC1', 'TH', 35000, 700),
-('SP28', N'Chloraseptic', 'NCC1', 'TH', 18000, 300),
-('SP29', N'Halls', 'NCC1', 'TH', 12000, 100),
-('SP30', N'Carbocisteine', 'NCC1', 'TH', 28000, 600),
-('SP31', N'Dextromethorphan', 'NCC2', 'TH', 40000, 1200),
-('SP32', N'N-Acetylcysteine', 'NCC2', 'TH', 90000, 3000),
-('SP33', N'Lactulose syrup (Si-rô lactulose)', 'NCC2', 'TH', 25000, 800),
-('SP34', N'Latex gloves (Găng tay lateks)', 'NCC2', 'TBYT', 35000, 700),
-('SP35', N'Patient monitor (Máy giám sát bệnh nhân)', 'NCC2', 'TBYT', 3500000, 6000),
-('SP36', N'Nebulizer (Máy phun sương)', 'NCC3', 'TBYT', 700000, 2000),
-('SP37', N'Hydrocortisone', 'NCC3', 'TH', 45000, 1500),
-('SP38', N'Gloves (Găng tay)', 'NCC3', 'TH', 25000, 600),
-('SP39', N'Electrocardiograph (Máy điện tâm đồ)', 'NCC3', 'TBYT', 5000000, 120),
-('SP40', N'Operating table (Bàn phẫu thuật)', 'NCC3', 'TBYT', 8000000, 1500),
-('SP41', N'Codeine', 'NCC4', 'TH', 60000, 2500),
-('SP42', N'Benadryl', 'NCC4', 'TH', 35000, 800),
-('SP43', N'Needle (Kim tiêm)', 'NCC4', 'TBYT', 120000, 5000),
-('SP44', N'Oxygen tank (Bình oxy)', 'NCC4', 'TBYT', 2000000, 300),
-('SP45', N'Walker (Ghế đi bộ)', 'NCC4', 'TBYT', 1000000, 500),
-('SP46', N'Blood pressure monitor (Máy đo huyết áp)', 'NCC5', 'TBYT', 1500000, 300),
-('SP47', N'Glucose test strips (Que thử đường huyết)', 'NCC5', 'TBYT', 300000, 1000),
-('SP48', N'Nebulizer solution (Dung dịch phun sương)', 'NCC5', 'TH', 40000, 1200),
-('SP49', N'Insulin pen (Bút tiêm insulin)', 'NCC5', 'TH', 120000, 400),
-('SP50', N'X-ray machine (Máy X-quang)', 'NCC5', 'TBYT', 15000000, 2000);
+('SP10', N'Suction pump (Máy hút)', 'NCC2', 'TBYT', 3000000, 5000),
+('SP10', N'Suction pump (Máy hút)', 'NCC2', 'TBYT', 3000000, 5000),
+('SP10', N'Suction pump (Máy hút)', 'NCC2', 'TBYT', 3000000, 5000),
+('SP10', N'Suction pump (Máy hút)', 'NCC2', 'TBYT', 3000000, 5000),
+('SP10', N'Suction pump (Máy hút)', 'NCC2', 'TBYT', 3000000, 5000),
+('SP10', N'Suction pump (Máy hút)', 'NCC2', 'TBYT', 3000000, 5000)
 
 SELECT *FROM SanPham;
-DELETE FROM SanPham
 
 --Thêm thông tin bảng khách hàng
 EXEC sp_help KhachHang
 INSERT INTO KhachHang 
 VALUES 
-('KH1', N'Nguyễn Văn Tèo', 'Việt Trì-Phú Thọ', '011223456', 'teo@gmail.com'),
-('KH2', N'Nguyễn Văn Tý', 'Hoàng Mai-Hà Nội', '014564656', 'ty@gmail.com'),
-('KH3', N'Nguyễn Thị Xuân', 'Quận 1-Sài Gòn', '075445646', 'xuant@gmail.com'),
-('KH4', N'Nguyễn Thị Hạ', 'Nghệ An', '016634636', 'hant@gmail.com'),
-('KH5', N'Nguyễn Thị Thu', 'Mộc Châu', '063464536', 'thunt@gmail.com'),
-('KH6', N'Nguyễn Văn Đông', 'Quảng Trị', '03534567', 'dongnv@gmail.com'),
-('KH7', N'Nguyễn Thị Mai', 'Cà Mau', '04457454', 'maimai@gmail.com'),
-('KH8', N'Nguyễn Văn Sáng', 'Kon-Tum', '077574575', 'sang@gmail.com')
+('KH1', N'Nguyễn Văn Tèo', N'Phú Thọ', '011223456', 'teo@gmail.com'),
+('KH2', N'Nguyễn Văn Tý', N'Hà Nội', '014564656', 'ty@gmail.com'),
+('KH3', N'Nguyễn Thị Xuân', N'Sài Gòn', '075445646', 'xuant@gmail.com'),
+('KH4', N'Nguyễn Thị Hạ', N'Nghệ An', '016634636', 'hant@gmail.com'),
+('KH5', N'Nguyễn Thị Thu', N'Mộc Châu', '063464536', 'thunt@gmail.com'),
+('KH6', N'Nguyễn Văn Đông', N'Quảng Trị', '03534567', 'dongnv@gmail.com'),
+('KH7', N'Nguyễn Thị Mai', N'Cà Mau', '04457454', 'maimai@gmail.com'),
+('KH8', N'Nguyễn Văn Sáng', N'Kon-Tum', '077574575', 'sang@gmail.com')
+
+UPDATE KhachHang SET DiaChi = N'Cà Mau' WHERE MaKhachHang = 'KH7'
 
 SELECT *FROM KhachHang;
-DELETE FROM KhachHang
 
 
 --Thêm thông tin bảng đơn hàng
@@ -170,6 +151,17 @@ VALUES
 ('DH22', 'KH8', '2024/4/5', 0, 0 ),
 ('DH23', 'KH8', '2024/1/16', 0, 0 ),
 ('DH24', 'KH8', '2024/3/17', 0, 0 ),
+('DH1', 'KH1', '2024/3/19', 0, 0 ),
+('DH1', 'KH1', '2024/3/19', 0, 0 ),
+('DH1', 'KH1', '2024/3/19', 0, 0 ),
+('DH1', 'KH1', '2024/3/19', 0, 0 ),
+('DH1', 'KH1', '2024/3/19', 0, 0 ),
+('DH1', 'KH1', '2024/3/19', 0, 0 ),
+('DH1', 'KH1', '2024/3/19', 0, 0 ),
+('DH1', 'KH1', '2024/3/19', 0, 0 ),
+('DH1', 'KH1', '2024/3/19', 0, 0 )
+INSERT INTO DonHang
+VALUES 
 ('DH25', 'KH1', '2024/4/5', 0, 0),
 ('DH26', 'KH2', '2024/4/6', 0, 0),
 ('DH27', 'KH3', '2024/4/7', 0, 0),
@@ -205,10 +197,7 @@ VALUES
 ('DH57', 'KH1', '2024/5/7', 0, 0),
 ('DH58', 'KH2', '2024/5/8', 0, 0);
 
-
 SELECT *FROM DonHang;
-DELETE FROM DonHang
-
 
 --Thêm thông tin bảng chi tiết đơn hàng
 EXEC sp_help ChiTietDonHang
@@ -288,7 +277,9 @@ VALUES
 ('CTD72', 'DH23', 'SP25', 21, 0),
 ('CTD73', 'DH24', 'SP1', 221, 0),
 ('CTD74', 'DH24', 'SP2', 20, 0),
-('CTD75', 'DH24', 'SP11', 50, 0),
+('CTD75', 'DH24', 'SP11', 50, 0)
+INSERT INTO ChiTietDonHang
+VALUES
 ('CTD76', 'DH25', 'SP26', 5, 0),
 ('CTD77', 'DH25', 'SP27', 10, 0),
 ('CTD78', 'DH25', 'SP28', 20, 0),
@@ -389,94 +380,463 @@ VALUES
 ('CTD173', 'DH58', 'SP23', 12, 0),
 ('CTD174', 'DH58', 'SP24', 15, 0);
 
+SELECT *FROM DonHang
 SELECT *FROM ChiTietDonHang;
-DELETE FROM ChiTietDonHang
 
 --Việc cần làm
---1.Tính giá cho chi tiết đơn hàng
-UPDATE ChiTietDonHang
-SET Gia = ChiTietDonHang.SoLuong * SanPham.GiaSanPham
-FROM ChiTietDonHang, SanPham
-WHERE ChiTietDonHang.MaSanPham = SanPham.MaSanPham
-
-SELECT *FROM ChiTietDonHang
-
-
-SELECT *FROM GIADONHANG;
---2.1.Tính tổng số cho đơn hàng
-UPDATE DonHang
-SET TongSo = (SELECT SUM(SoLuong) 
-	FROM ChiTietDonHang	
-	WHERE ChiTietDonHang.MaDonHang = DonHang.MaDonHang);
-	  
-SELECT *FROM DonHang
-
---2.2. Tính tổng số tiền cho từng đơn hàng
-
-UPDATE DonHang
-SET TongTien = (SELECT 
-		SUM(ChiTietDonHang.SoLuong * SanPham.GiaSanPham) 
-		FROM ChiTietDonHang,SanPham 
-		WHERE ChiTietDonHang.MaDonHang = DonHang.MaDonHang AND
-		ChiTietDonHang.MaSanPham = SanPham.MaSanPham );
-
-SELECT *FROM DonHang
-	
---3.Viết thủ tục thêm sửa xóa cho các bảng (lưu ý:
---khi thêm vào bảng đơn hàng chi tiết phải kiểm tra xem tồn kho có thỏa mãn không)
-
---4.Viết trigger cập nhật giá khi thêm/xóa cho đơn hàng chi tiết
-CREATE TRIGGER UPDATE_DONHANGCT
-ON ChiTietDonHang
-AFTER INSERT, DELETE, UPDATE
+--Thủ tục thêm Nhà cung cấp
+CREATE PROCEDURE ThemNhaCungCap 
+					@MaNCC char(20),
+					@TenNCC nchar(100), 
+					@DienThoai char(15), 
+					@Email char(50)
 AS
-BEGIN	
-	UPDATE ChiTietDonHang
-	
+BEGIN
+	IF EXISTS (SELECT MaNCC FROM NhaCungCap WHERE @MaNCC = MaNCC)
+		PRINT N'Đã tồn tại mã nhà cung cấp'
+	ELSE
+		INSERT INTO NhaCungCap 
+		VALUES (@MaNCC, @TenNCC, @DienThoai, @Email)
+		PRINT N'Thêm nhà cung cấp thành công'
+END
+GO
 
+EXEC ThemNhaCungCap 'NCC6', N'Công ty cổ phần dược phẩm Traphaco', '0294729999', 'traphaco@gmail.com'
+SELECT * FROM NhaCungCap
 
---5.Viết trigger cập nhật tổng tiền khi đơn hàng chi tiết thay đổi
---6.Tạo view đưa ra danh sách hóa đơn của mỗi khách hàng
-
-CREATE VIEW DANHSACHHOADON
+--Thủ tục xóa nhà cung cấp
+CREATE PROCEDURE XoaNhaCungCap 
+				@MaNCC char(20)
 AS
-SELECT
-	KhachHang.TenKhachHang,
-	DonHang.MaDonHang,
-	DonHang.NgayLap,
-	DonHang.TongTien
-FROM
-	DonHang, KhachHang
-WHERE DonHang.MaKhachHang = KhachHang.MaKhachHang
-GROUP BY KhachHang.TenKhachHang,
-	DonHang.MaDonHang,
-	DonHang.NgayLap,
-	DonHang.TongTien
+BEGIN
+	IF NOT EXISTS (SELECT MaNCC FROM NhaCungCap WHERE MaNCC = @MaNCC)
+		PRINT N'Không tồn tại mã nhà cung cấp'
+	IF EXISTS (SELECT MaNCC FROM SanPham WHERE MaNCC = @MaNCC)
+		PRINT N'Đã tồn tại trong bảng sản phẩm'
+	ELSE
+		DELETE FROM NhaCungCap WHERE MaNCC = @MaNCC
+		PRINT N'Xóa nhà cung cấp thành công!'
+END
 
-SELECT *FROM DANHSACHHOADON
+EXEC XoaNhaCungCap 'NCC10'
+EXEC XoaNhaCungCap 'NCC6'
+SELECT * FROM NhaCungCap
 
---7.Tạo view đưa ra sản phẩm được mua nhiều nhất
+--Thủ tục sửa Nhà cung cấp
+EXEC sp_help NhaCungCap;
+CREATE PROCEDURE SuaNhaCungCap 
+				@MaNCC CHAR(20),
+				@TenNCC NCHAR(200),
+				@DienThoai CHAR(15),
+				@Email CHAR(50)
+AS
+BEGIN
+	IF NOT EXISTS (SELECT MaNCC FROM NhaCungCap WHERE MaNCC = @MaNCC)
+		PRINT N'Không tồn tại nhà cung cấp'
+	ELSE 
+		UPDATE NhaCungCap 
+		SET TenNCC = @TenNCC, DienThoai = @DienThoai, Email = @Email 
+		WHERE MaNCC = @MaNCC
+END
+GO
 
-CREATE VIEW SPBANCHAY AS
-SELECT TOP 1 
-    SanPham.TenSanPham,
-    SUM(ChiTietDonHang.SoLuong) AS TongSoLuong
-FROM 
-    ChiTietDonHang,SanPham 
-WHERE ChiTietDonHang.MaSanPham = SanPham.MaSanPham
-GROUP BY 
-    SanPham.TenSanPham
-ORDER BY 
-    TongSoLuong DESC;
+--Thủ tục thêm loại sản phẩm
+CREATE PROCEDURE ThemLoaiSanPham 
+				@MaLoaiSP CHAR(20), 
+				@TenLoaiSP NCHAR(100)
+AS
+BEGIN
+	IF EXISTS (SELECT MaLoaiSP FROM LoaiSanPham WHERE @MaLoaiSP = MaLoaiSP)
+		PRINT N'Loại sản phẩm đã tồn tại.'
+	ELSE
+		INSERT INTO LoaiSanPham(MaLoaiSP, TenLoaiSP) 
+		VALUES (@MaLoaiSP, @TenLoaiSP)
+		PRINT N'Thêm loại sản phẩm thành công!'
+END
+GO
 
-SELECT *FROM SPBANCHAY
+EXEC ThemLoaiSanPham 'TEST1', N'Khử trùng cao cấp'
+SELECT * FROM LoaiSanPham
 
+--Thủ tục xóa loại sản phẩm
+CREATE PROCEDURE XoaLoaiSanPham 
+					@MaLoaiSP CHAR(20)
+AS
+BEGIN
+	IF NOT EXISTS (SELECT MaLoaiSP FROM LoaiSanPham WHERE MaLoaiSP = @MaLoaiSP)
+		PRINT N'Không tồn tại loại sản phẩm có mã ' + @MaLoaiSP
+	IF EXISTS (SELECT MaLoaiSP FROM SanPham WHERE MaLoaiSP = @MaLoaiSP)
+		PRINT N'Đã tồn tại trong bảng sản phẩm'
+	ELSE
+			DELETE FROM LoaiSanPham WHERE MaLoaiSP = @MaLoaiSP
+			PRINT N'Xóa loại sản phẩm thành công!'
+END
+GO
 
+EXEC XoaLoaiSanPham 'TEST1'
+SELECT * FROM LoaiSanPham
 
+--Thủ tục sửa loại sản phẩm
+CREATE PROCEDURE SuaLoaiSanPham 
+					@MaLoaiSP CHAR(20),
+					@TenLoaiSP NCHAR(100)
+AS
+BEGIN
+	IF NOT EXISTS (SELECT MaLoaiSP FROM LoaiSanPham WHERE MaLoaiSP = @MaLoaiSP)
+		PRINT N'Không tồn tại loại sản phẩm'
+	ELSE 
+		UPDATE LoaiSanPham 
+		SET TenLoaiSP = @TenLoaiSP
+		WHERE MaLoaiSP = @MaLoaiSP
+END
+GO
 
+--Thủ tục thêm sản phẩm
+CREATE PROCEDURE ThemSanPham 
+				@MaSanPham CHAR(20),
+				@TenSanPham NCHAR(100), 
+				@MaNCC CHAR(20), 
+				@MaLoaiSP CHAR(20),
+				@GiaSanPham DECIMAL(18, 2), 
+				@TonKho INT
+AS
+BEGIN
+	IF EXISTS (SELECT MaSanPham FROM SanPham WHERE MaSanPham = @MaSanPham)
+		PRINT N'Đã tồn tại mã sản phẩm'
+	IF NOT EXISTS (SELECT MaNCC FROM NhaCungCap WHERE MaNCC = @MaNCC)
+		PRINT N'Không tồn tại nhà cung cấp'
+	IF NOT EXISTS (SELECT MaLoaiSP FROM LoaiSanPham WHERE MaLoaiSP = @MaLoaiSP)
+		PRINT N'Không tồn tại loại sản phẩm'
+	ELSE
+		BEGIN
+			INSERT INTO SanPham 
+			VALUES (@MaSanPham, 
+					@TenSanPham, 
+					@MaNCC, 
+					@MaLoaiSP,
+					@GiaSanPham, 
+					@TonKho)
+			PRINT N'Thêm sản phẩm thành công'
+		END
+END
+GO
 
---8.Tạo view đưa ra nhà cung cấp bán nhiều nhất
-CREATE VIEW NCCNHIEUNHAT 
+EXEC ThemSanPham 'SP26', N'Bổ phế Nam Hà', 'NCC5', 'TH', 28000, 1300;
+SELECT * FROM SanPham
+
+--Thủ tục xóa sản phẩm
+CREATE PROCEDURE XoaSanPham 
+					@MaSanPham CHAR(20)
+AS
+BEGIN
+	IF NOT EXISTS (SELECT MaSanPham FROM SanPham WHERE MaSanPham = @MaSanPham)
+		PRINT N'Không tồn tại mã sản phẩm'
+	IF EXISTS (SELECT MaSanPham FROM ChiTietDonHang WHERE MaSanPham = @MaSanPham)
+		PRINT N'Đã tồn tại trong bảng chi tiết đơn hàng'
+	ELSE
+		DELETE FROM SanPham WHERE MaSanPham = @MaSanPham
+		PRINT N'Xóa sản phẩm thành công!'
+END
+GO
+EXEC XoaSanPham 'SP26'
+SELECT * FROM SanPham
+
+--Thủ tục sửa sản phẩm
+CREATE PROCEDURE SuaSanPham 
+				@MaSanPham CHAR(20),
+				@TenSanPham NCHAR(100), 
+				@MaNCC CHAR(20), 
+				@MaLoaiSP CHAR(20),
+				@GiaSanPham DECIMAL(18, 2), 
+				@TonKho INT
+AS 
+BEGIN
+	IF NOT EXISTS (SELECT MaSanPham FROM SanPham WHERE MaSanPham = @MaSanPham)
+		PRINT N'Không tồn tại mã sản phẩm'
+	IF NOT EXISTS (SELECT MaNCC FROM NhaCungCap WHERE MaNCC = @MaNCC)
+		PRINT N'Không tồn tại mã nhà cung cấp'
+	IF NOT EXISTS (SELECT MaLoaiSP FROM LoaiSanPham WHERE MaLoaiSP = @MaLoaiSP)
+		PRINT N'Không tồn tại mã loại sản phẩm'
+	ELSE
+		UPDATE SanPham 
+		SET TenSanPham = @TenSanPham, MaNCC = @MaNCC, MaLoaiSP = @MaLoaiSP, GiaSanPham = @GiaSanPham, TonKho = @TonKho
+		WHERE MaSanPham = @MaSanPham
+END
+GO
+
+--Thủ tục thêm khách hàng
+CREATE PROCEDURE ThemKhachHang 
+					@MaKhachHang CHAR(20), 
+					@TenKhachHang NCHAR(100),
+					@DiaChi NCHAR(100), 
+					@Sdt CHAR(15), @Email CHAR(50)
+AS
+BEGIN
+	IF EXISTS (SELECT MaKhachHang FROM KhachHang WHERE @MaKhachHang = MaKhachHang)
+		PRINT N'Đã tồn tại khách hàng'
+	ELSE
+		INSERT INTO KhachHang 
+		VALUES (
+			@MaKhachHang, 
+			@TenKhachHang,
+			@DiaChi, 
+			@Sdt, 
+			@Email)
+		PRINT N'Thêm khách hàng thành công'
+END
+GO
+
+--Thủ tục xóa khách hàng
+CREATE PROCEDURE XoaKhachHang 
+					@MaKhachHang CHAR(20)
+AS
+BEGIN
+	IF NOT EXISTS (SELECT MaKhachHang FROM KhachHang WHERE MaKhachHang = @MaKhachHang)
+		PRINT N'Không tồn tại mã khách hàng'
+	IF EXISTS (SELECT MaKhachHang FROM DonHang WHERE MaKhachHang = @MaKhachHang)
+		PRINT N'Đã tồn tại trong bảng đơn hàng'
+	ELSE
+		DELETE FROM KhachHang WHERE MaKhachHang = @MaKhachHang
+		PRINT N'Xóa khách hàng thành công!'
+END
+GO
+
+--Thủ tục sửa khách hàng
+CREATE PROCEDURE SuaKhachHang
+				@MaKhachHang CHAR(20),
+				@TenKhachHang NVARCHAR(200),
+				@DiaChi NCHAR(200),
+				@Sdt CHAR(25),
+				@Email CHAR(50)
+AS
+BEGIN
+	IF NOT EXISTS(SELECT MaKhachHang FROM KhachHang WHERE MaKhachHang = @MaKhachHang)
+	PRINT N'KHÔNG TỒN TẠI'
+	ELSE
+		UPDATE KhachHang
+		SET 
+			TenKhachHang = @TenKhachHang,
+			DiaChi = @DiaChi,
+			Sdt = @SdT,
+			Email = @Email
+		WHERE 
+			MaKhachHang = @MaKhachHang;
+END;
+
+--Thủ tục thêm đơn hàng
+CREATE PROCEDURE ThemDonHang 
+					@MaDonHang CHAR(20), 
+					@MaKhachHang CHAR(20),
+					@NgayLap DATE, 
+					@TongSo INT, 
+					@TongTien DECIMAL(18, 2)
+AS
+BEGIN
+	IF EXISTS (SELECT MaDonHang FROM DonHang WHERE MaDonHang = @MaDonHang)
+		PRINT N'Đã tồn tại mã đơn hàng'
+	IF NOT EXISTS (SELECT MaKhachHang FROM KhachHang WHERE MaKhachHang = @MaKhachHang)
+		PRINT N'Không tồn tại khách hàng'
+	ELSE
+			INSERT INTO DonHang 
+			VALUES 
+			(@MaDonHang, 
+			@MaKhachHang,
+			@NgayLap, 
+			@TongSo, 
+			@TongTien)
+			PRINT N'Thêm đơn hàng thành công'
+END
+GO
+--Thủ tục xóa đơn hàng
+CREATE PROCEDURE XoaDonHang 
+					@MaDonHang CHAR(20) --đơn hàng tồn tại trong chi tiết đơn hàng
+AS
+BEGIN
+	IF NOT EXISTS (SELECT MaDonHang FROM DonHang WHERE MaDonHang = @MaDonHang)
+		PRINT N'Không tồn tại đơn hàng'
+	IF EXISTS (SELECT MaDonHang FROM ChiTietDonHang WHERE MaDonHang = @MaDonHang)
+		PRINT N'Tồn tại mã đơn hàng trong chi tiết đơn hàng'
+	ELSE
+		DELETE FROM DonHang WHERE MaDonHang = @MaDonHang
+		PRINT N'Xóa đơn hàng thành công!'
+END
+GO
+--Thủ tục thêm chi tiết đơn hàng
+EXEC sp_help ChiTietDonHang;
+CREATE PROCEDURE ThemChiTietDonHang 
+					@MaCT_DH CHAR(20),
+					@MaDonHang CHAR(20),
+					@MaSanPham CHAR(20),
+					@SoLuong INT,
+					@Gia DECIMAL(18, 2)
+AS
+BEGIN
+	DECLARE @SoLuongTonKho INT
+	SELECT @SoLuongTonKho = TonKho
+	FROM SanPham
+	WHERE MaSanPham = @MaSanPham
+
+	IF @SoLuongTonKho < @SoLuong
+		PRINT N'Không đủ số lượng'
+	IF EXISTS (SELECT MaCT_DH FROM ChiTietDonHang WHERE MaCT_DH = @MaCT_DH)
+		PRINT N'Đã tồn tại chi tiết đơn hàng'
+	IF NOT EXISTS (SELECT MaDonHang FROM DonHang WHERE MaDonHang = @MaDonHang)
+		PRINT N'Không tồn tại mã đơn hàng'
+	IF NOT EXISTS (SELECT MaSanPham FROM SanPham WHERE MaSanPham = @MaSanPham)
+		PRINT N'Không tồn tại mã sản phẩm'
+	ELSE 
+		INSERT INTO ChiTietDonHang
+		VALUES (@MaCT_DH, @MaDonHang, @MaSanPham, @SoLuong, @Gia)
+		
+		UPDATE SanPham
+		SET TonKho = TonKho - @SoLuong
+		WHERE MaSanPham = @MaSanPham
+END
+GO
+--Thủ tục xóa chi tiết đơn hàng
+CREATE PROCEDURE XoaChiTietDonHang
+					@MaCT_DH CHAR(20),
+					@SoLuong INT
+AS
+BEGIN
+	IF NOT EXISTS (SELECT MaCT_DH FROM ChiTietDonHang WHERE MaCT_DH = @MaCT_DH)
+		PRINT N'Không tồn tại chi tiết đơn hàng'
+	ELSE 
+		DELETE FROM ChiTietDonHang WHERE MaCT_DH = @MaCT_DH
+		UPDATE SanPham
+		SET TonKho = TonKho + @SoLuong
+		PRINT N'Xóa thành công'
+END
+GO
+--Thủ tục sửa đơn hàng chi tiết
+CREATE PROCEDURE SuaChiTietDonHang 
+					@MaCT_DH CHAR(20),
+					@MaDonHang CHAR(20),
+					@MaSanPham CHAR(20),
+					@SoLuong INT,
+					@Gia DECIMAL(18, 2)
+AS
+BEGIN
+	DECLARE @SoLuongTonKho INT
+	DECLARE @SoLuongCu INT
+
+	SELECT @SoLuongTonKho = TonKho
+	FROM SanPham
+	WHERE MaSanPham = @MaSanPham
+
+	SELECT @SoLuongCu = SoLuong
+	FROM ChiTietDonHang
+	WHERE MaCT_DH = @MaCT_DH
+
+	IF @SoLuongTonKho < @SoLuong
+		PRINT N'Không đủ số lượng'
+	IF NOT EXISTS (SELECT MaCT_DH FROM ChiTietDonHang WHERE MaCT_DH = @MaCT_DH)
+		PRINT N'Không tồn tại chi tiết đơn hàng'
+	IF NOT EXISTS (SELECT MaDonHang FROM DonHang WHERE MaDonHang = @MaDonHang)
+		PRINT N'Không tồn tại mã đơn hàng'
+	IF NOT EXISTS (SELECT MaSanPham FROM SanPham WHERE MaSanPham = @MaSanPham)
+		PRINT N'Không tồn tại mã sản phẩm'
+	ELSE 
+		INSERT INTO ChiTietDonHang
+		VALUES (@MaCT_DH, @MaDonHang, @MaSanPham, @SoLuong, @Gia)
+		
+		UPDATE SanPham
+		SET TonKho = TonKho + @SoLuongCu - @SoLuong
+		WHERE MaSanPham = @MaSanPham
+END
+GO
+--Tính giá cho chi tiết đơn hàng
+UPDATE ChiTietDonHang 
+SET Gia = SoLuong*SanPham.GiaSanPham
+FROM ChiTietDonHang
+INNER JOIN SanPham ON ChiTietDonHang.MaSanPham = SanPham.MaSanPham
+
+SELECT *FROM ChiTietDonHang;
+--Tính tổng số tiền, tổng số cho đơn hàng
+UPDATE DonHang
+SET TongTien = (
+	SELECT SUM(ChiTietDonHang.Gia) 
+	FROM ChiTietDonHang
+	WHERE ChiTietDonHang.MaDonHang = DonHang.MaDonHang )
+
+UPDATE DonHang
+	SET TongSo = (
+	SELECT SUM(ChiTietDonHang.SoLuong)
+	FROM ChiTietDonHang
+	WHERE ChiTietDonHang.MaDonHang = DonHang.MaDonHang)
+
+SELECT *FROM ChiTietDonHang;
+SELECT *FROM DonHang;
+
+--Trigger tính giá, tổng tiền, tổng số
+CREATE TRIGGER UpdateInsertTonKho 
+	ON ChiTietDonHang
+	AFTER INSERT, UPDATE
+AS
+BEGIN
+	UPDATE SanPham
+	SET TonKho = TonKho - (SELECT SoLuong FROM inserted)
+	FROM SanPham, ChiTietDonHang
+	WHERE ChiTietDonHang.MaSanPham = SanPham.MaSanPham AND ChiTietDonHang.MaSanPham = (SELECT MaSanPham FROM inserted)
+
+	UPDATE ChiTietDonHang 
+	SET Gia = SoLuong * SanPham.GiaSanPham
+	FROM ChiTietDonHang, SanPham
+	WHERE ChiTietDonHang.MaSanPham = SanPham.MaSanPham 
+	AND (ChiTietDonHang.MaSanPham = (SELECT MaSanPham FROM inserted))
+
+	UPDATE DonHang
+	SET TongSo = TongSo + ChiTietDonHang.SoLuong, TongTien = TongTien + ChiTietDonHang.Gia
+	FROM DonHang, ChiTietDonHang
+	WHERE ChiTietDonHang.MaDonHang = DonHang.MaDonHang
+	AND (ChiTietDonHang.MaDonHang = (SELECT MaDonHang FROM inserted))
+END;
+
+CREATE TRIGGER UpdateDeleteTonKho
+	ON ChiTietDonHang
+	AFTER DELETE, UPDATE
+AS
+BEGIN
+	UPDATE SanPham
+	SET TonKho = TonKho + (SELECT SoLuong FROM deleted)
+	FROM SanPham, ChiTietDonHang
+	WHERE ChiTietDonHang.MaSanPham = SanPham.MaSanPham AND ChiTietDonHang.MaSanPham = (SELECT MaSanPham FROM deleted)
+
+	UPDATE DonHang
+	SET TongSo = TongSo - ChiTietDonHang.SoLuong, TongTien = TongTien - ChiTietDonHang.Gia
+	FROM DonHang, ChiTietDonHang
+	WHERE ChiTietDonHang.MaDonHang = DonHang.MaDonHang
+	AND (ChiTietDonHang.MaDonHang = (SELECT MaDonHang FROM deleted))
+END;
+
+--Tạo view đưa ra danh sách hóa đơn của mỗi khách hàng
+CREATE VIEW DanhSachHoaDonKhachHang AS 
+SELECT 
+		KhachHang.MaKhachHang, 
+		TenKhachHang,
+		DiaChi, 
+		Sdt, 
+		Email, 
+		MAX(DonHang.NgayLap) AS NgayLap, 
+		SUM(DonHang.TongSo) AS TongSoHangHoa, 
+		SUM(DonHang.TongTien) AS TongTien
+FROM KhachHang
+INNER JOIN DonHang ON KhachHang.MaKhachHang = DonHang.MaKhachHang
+GROUP BY KhachHang.MaKhachHang, TenKhachHang, DiaChi, Sdt, Email
+
+SELECT *FROM DanhSachHoaDonKhachHang;
+--.Tạo view đưa ra sản phẩm được mua nhiều nhất
+CREATE VIEW SanPhamDuocMuaNhieuNhat AS
+SELECT TOP (5) WITH TIES SanPham.*, SUM(ChiTietDonHang.SoLuong) AS TongSo
+FROM SanPham
+INNER JOIN ChiTietDonHang ON SanPham.MaSanPham = ChiTietDonHang.MaSanPham
+GROUP BY SanPham.MaSanPham, TenSanPham, MaNCC, MaLoaiSP, GiaSanPham, TonKho
+ORDER BY SUM(ChiTietDonHang.SoLuong) DESC
+
+SELECT *FROM SanPhamDuocMuaNhieuNhat
+SELECT *FROM DonHang
+--Tạo view đưa ra nhà cung cấp bán nhiều nhất
+CREATE VIEW NhaCungCapNhieuNhat
 AS
 SELECT TOP 1 
     NhaCungCap.TenNCC AS TenNhaCungCap,
@@ -490,6 +850,42 @@ GROUP BY
     NhaCungCap.TenNCC
 ORDER BY 
     SUM(ChiTietDonHang.SoLuong) DESC;
-	
-SELECT *FROM NCCNHIEUNHAT
---9.Tạo view đưa ra số lượng tồn kho của mỗi sản phẩm
+
+SELECT *FROM NhaCungCapNhieuNhat;
+--Tạo view đưa ra số lượng tồn kho của mỗi sản phẩm
+--Tạo function tính tổng tiền cho 1 đơn hàng
+CREATE FUNCTION dbo.TongTienMotDonHang (@MaDonHang CHAR(20))
+RETURNS DECIMAL(18, 2)
+AS
+BEGIN
+	DECLARE @TongTien DECIMAL(18, 2);
+
+	SELECT @TongTien = SUM(Gia)
+	FROM ChiTietDonHang
+	WHERE MaDonHang = @MaDonHang
+
+	RETURN ISNULL(@TongTien, 0);
+END
+
+SELECT dbo.TongTienMotDonHang('DH1') AS TongTienDonHang1
+SELECT *FROM DonHang
+SELECT *FROM ChiTietDonHang
+
+--Function tính tổng số cho một đơn hàng 
+CREATE FUNCTION dbo.TongSoLuongMotDonHang (@MaDonHang CHAR(20))
+RETURNS INT
+AS
+BEGIN
+	DECLARE @TongSo INT;
+
+	SELECT @TongSo = SUM(SoLuong)
+	FROM ChiTietDonHang
+	WHERE MaDonHang = @MaDonHang
+
+	RETURN ISNULL(@TongSo, 0)
+END
+
+SELECT dbo.TongSoLuongMotDonHang('DH1') AS TongSoLuongDonHang1;
+SELECT *FROM DonHang;
+--Tính doanh thu theo sản phẩm
+--Thủ tục thống kê
