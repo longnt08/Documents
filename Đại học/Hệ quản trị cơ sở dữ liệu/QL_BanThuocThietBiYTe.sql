@@ -849,7 +849,7 @@ WHERE ChiTietDonHang.MaSanPham = SanPham.MaSanPham AND
 GROUP BY 
     NhaCungCap.TenNCC
 ORDER BY 
-    SUM(ChiTietDonHang.SoLuong) DESC;
+    TongSoLuong DESC;
 
 SELECT *FROM NhaCungCapNhieuNhat;
 --Tạo view đưa ra số lượng tồn kho của mỗi sản phẩm
